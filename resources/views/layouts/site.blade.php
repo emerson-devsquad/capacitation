@@ -9,18 +9,19 @@
 
         <!-- Styles -->
         @livewireStyles
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+        
     </head>
     <body class="font-sans antialiased">
-
         <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+            <x-site.site-navigation/>
             <!-- Page Heading -->
             <header>
-                {{ $header ?? ''}}
+                {{ $header ?? '' }}
             </header>
 
             <!-- Page Content -->
@@ -28,9 +29,7 @@
                 {{ $slot }}
             </main>
         </div>
-
         <x-footer/>
-
         @livewireScripts
     </body>
 </html>
