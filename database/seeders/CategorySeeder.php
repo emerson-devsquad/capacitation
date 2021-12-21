@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Advertisement;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Database\Seeder;
@@ -18,7 +19,7 @@ class CategorySeeder extends Seeder
         Category::factory(6)
         ->sequence(fn ($sequence) => ['name' => 'Category '.$sequence->index])
         ->has(
-            Product::factory()->count(5)->sequence(fn ($sequence) => ['name' => 'Product '.$sequence->index])
+            Advertisement::factory()->count(5)->sequence(fn ($sequence) => ['title' => 'Advertisement '.$sequence->index])
         )->create();
     }
 }

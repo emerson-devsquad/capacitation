@@ -10,8 +10,8 @@ class Category extends Model
 {
     use HasFactory;
 
-    public function products(): HasMany
+    public function advertisements(): HasMany
     {
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Advertisement::class);
     }
 }

@@ -10,7 +10,7 @@
     @livewireStyles
 </head>
 
-<body>
+<body class=" bg-gray-50">
     <div>
         <div class="relative bg-white" x-data="Components.popover({ open: false, focus: true })" x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
             <div class="absolute inset-0 shadow z-30 pointer-events-none" aria-hidden="true"></div>
@@ -468,7 +468,7 @@
 
         </div>
     </div>
-    <div>
+    <div class="py-10">
         <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
             <div class="text-center">
                 <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -488,7 +488,7 @@
             </div>
         </main>
     </div>
-    <livewire:home.product-list /> 
+    <livewire:home.recent-advertisement-list /> 
     @livewireScripts
 </body>
 
