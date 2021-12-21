@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Livewire\Home;
+namespace App\Http\Livewire\Site;
 
 use App\Models\Advertisement;
 use Livewire\Component;
 
-class RecentAdvertisementList extends Component
+class RecentsAdvertisements extends Component
 {
     public function getAdvertisementsProperty()
     {
@@ -17,6 +17,6 @@ class RecentAdvertisementList extends Component
 
     public function render()
     {
-        return view('livewire.home.recent-advertisement-list');
+        return view('livewire.site.recents-advertisements');
     }
 }
