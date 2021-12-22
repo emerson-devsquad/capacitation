@@ -10,9 +10,10 @@ class Advertisement extends Model
 {
     use HasFactory;
 
+    const STATUS_PENDING   = 'Pending';
     const STATUS_AVAILABLE = 'Available';
-    const STATUS_SOLD_OUT = 'Sold Out';
-    const STATUS_PAUSED = 'Paused';
+    const STATUS_SOLD_OUT  = 'Sold Out';
+    const STATUS_PAUSED    = 'Paused';
 
     public function getPriceFormattedAttribute()
     {
