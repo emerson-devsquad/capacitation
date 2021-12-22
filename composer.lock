@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0be84ce559d7b2d12b7959021d6fb73",
+    "content-hash": "46128ef4798ab7d2828dca000d69c8f6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5445,6 +5445,59 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "devsquad/icons",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elitedevsquad/icons.git",
+                "reference": "133763dccdf6e8674053488bce514e91a46f57c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elitedevsquad/icons/zipball/133763dccdf6e8674053488bce514e91a46f57c1",
+                "reference": "133763dccdf6e8674053488bce514e91a46f57c1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^8.40",
+                "illuminate/support": "^8.40",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Icons\\IconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Icons\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aureliano Neto",
+                    "email": "aurelianosza@gmail.com"
+                }
+            ],
+            "description": "Heroicons blade components to Laravel.",
+            "keywords": [
+                "icons",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/elitedevsquad/icons/issues",
+                "source": "https://github.com/elitedevsquad/icons/tree/v1.0.1"
+            },
+            "time": "2021-05-12T17:11:29+00:00"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.4.0",
